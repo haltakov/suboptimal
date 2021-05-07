@@ -1,12 +1,18 @@
 # SUBOPTIMAL - Seriously Unnecessary Baffling Obscure Perplexing Terms In MAchine Learning
 
-Starting with Machine Learning is difficult... Everybody is using complicated and confusing terms 🤔? There are complicated math formulas everywhere 😳? You don't understand anything 😬?
+Starting with Machine Learning is difficult...
+
+Everybody is using complicated and confusing terms 🤔
+
+There are complicated math formulas everywhere 😳
+
+You don't understand anything 😬?
 
 Don't worry, you came to the right place! This page will explain those perplexing terms in human language. And let me tell you a secret... most things are actually not that hard! 😉
 
 ## Example
 
-You wanted to know what a Rectified Linear Unit is? here it is...
+You wanted to know what a Rectified Linear Unit is? Here is an easy explanation...
 
 <table>
 <thead>
@@ -19,7 +25,7 @@ You wanted to know what a Rectified Linear Unit is? here it is...
 <tr>
 <td valign="top">Rectified Linear Unit (ReLU)</td>
 <td>
-    <p>A simple function of `x` returning 0 if `x < 0` or `x` otherwise</p>
+    <p>A simple function of <tt>x</tt> returning 0 if <tt>x < 0</tt> or <tt>x</tt> otherwise</p>
     <p><img width="400px" src="explanations/images/relu.png"></p>
 </td>
 </tr>

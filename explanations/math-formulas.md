@@ -16,9 +16,9 @@ All those complicated formulas that you have in Machine Learning! The good thing
     <p><img width="400px" src="images/mse_formula.png"></p>
 </td>
 <td>
-    <p>A function that measures how good a predicted value `Ŷ` mathes some ground truth value `Y`.</p>
+    <p>A function that measures how good a predicted value <tt>Ŷ</tt> mathes some ground truth value <tt>Y</tt></p>
     <p>It computes the error by taking the difference between the two values and computing the square. In this way the error is always positive.</p>
-    <p>You then take the average of the error from all samples by summing the errors up `Σ` and dividing by the number of samples `n`.</p>
+    <p>You then take the average of the error from all samples by summing the errors up <tt>Σ</tt> and dividing by the number of samples <tt>n</tt>.</p>
     <p><img width="400px" src="images/mse_details.png"></p>
 </td>
 </tr>

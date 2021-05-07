@@ -13,7 +13,7 @@ Researchers often have the ability to invent complicated names for simple things
 <tr>
 <td valign="top">Rectified Linear Unit (ReLU)</td>
 <td>
-    <p>A simple function of `x` returning 0 if `x < 0` or `x` otherwise</p>
+    <p>A simple function of <tt>x</tt> returning 0 if <tt>x < 0<tt> or <tt>x</tt> otherwise</p>
     <p><img width="400px" src="images/relu.png"></p>
 </td>
 </tr>
