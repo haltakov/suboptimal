@@ -47,3 +47,7 @@ There are currently 3 categories explaning different things:
 If you want to contribute an explanation check out the [guidelines](CONTRIBUTING) and feel free to create a pull request!
 
 ## About
+
+Hi, I'm Vladimir and I'm a self-driving car engineer with background in machine learning and computer vision.
+
+I want to help people get started with machine learning. I'm tweeting a lot on this topic so you can follow me [@haltakov](https://twitter.com/haltakov).
