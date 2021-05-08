@@ -1,6 +1,6 @@
 # Math Formulas
 
-All those complicated formulas that you have in Machine Learning! The good thing is that you can learn to read them. You need to understand the formula piece by piece and it is usually not so somplicated.
+All those complicated formulas that you have in Machine Learning! The good thing is that you can learn to read them. You need to understand the formula piece by piece. You'll see it is usually not so complicated.
 
 <table>
 <thead>

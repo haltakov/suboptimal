@@ -1,6 +1,6 @@
 ## Math Terms
 
-Here you will find explanations of some math terms that are often used in Machine Learning and that may sound scary to beginners. They are not...
+Here you will find explanations of some math terms often used in Machine Learning. They may sound scary to beginners, but they are not that hard.
 
 <table>
 <thead>

@@ -1,19 +1,19 @@
 # Contributing to SUBOPTIMAL
 
-Thank you for taking the tie to contribute and make machine learning more accessible to people that are starting out!
+Thank you for taking the tie to contribute and make machine learning more accessible to beginners!
 
-Feel free to contribute an explanation to any of the categories, by creating a pull request.
+Feel free to contribute an explanation to any of the categories by creating a pull request.
 
 ## Explaining Terms
 
-When explaining machine learning or math terms try to give a very short explanation in the first paragraph - just one sentence!
+When explaining machine learning or mathematical terms, try to give a short explanation in the first paragraph - just one sentence!
 
-After that you should describe the term in more details and possibly provide a link with more information.
+After that, you should describe the term in more detail and possibly provide a link with more information.
 
 ## Explaining Math Formulas
 
-Again, in the first sentance give a very brief explanation what is the formula used for.
+Again, in the first sentence, give a very brief explanation of the formula.
 
-Then, explain the different parts of the formula in more detail and why it is done in this way.
+Then, explain the different parts of the formula in more detail. Explain how it works and why.
 
-Include an image of the formula in the Term column and another image with annotations explaining different parts.
+Include an image of the formula in the Term column and another one with annotations explaining different parts.

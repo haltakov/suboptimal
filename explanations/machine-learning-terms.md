@@ -1,6 +1,6 @@
 # Machine Learning Terms
 
-Researchers often have the ability to invent complicated names for simple things. This should help you uncover the real meaning of those perplexing terms.
+Researchers often invent complicated names for simple things. This page will help you uncover the real meaning of those perplexing terms.
 
 <table>
 <thead>
@@ -28,4 +28,4 @@ Researchers often have the ability to invent complicated names for simple things
 </tbody>
 </table>
 
-Machine Learning terms are one thing, the math is another. Get some human language explanation of some confusion terms [here](math-terms.md).
+Machine Learning terms are one thing the math is another. Get some human language explanation of some confusing terms [here](math-terms.md).
