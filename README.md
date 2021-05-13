@@ -44,7 +44,7 @@ There are currently 3 categories explaning different things:
 
 ## Contributing
 
-If you want to contribute an explanation, check out the [guidelines](CONTRIBUTING) and feel free to create a pull request!
+If you want to contribute an explanation, check out the [guidelines](CONTRIBUTING.md) and feel free to create a pull request!
 
 ## About
 
