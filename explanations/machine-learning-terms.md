@@ -20,7 +20,7 @@ Researchers often invent complicated names for simple things. This page will hel
 <tr>
 <td valign="top">Embedding</td>
 <td>
-    <p>A representation of an object as a list of numers.</p>
+    <p>A representation of an object as a list of numbers.</p>
     <p>Embeddings are commonly used to create representations of objects or features that are suitable for particular machine learning algorithms.</p>
     <p>One example is working with words in Natural Language Processing. Words are usually transformed to a list of numbers  (embedded) before given as input to a neural network. The exact mapping between word and the list of numbers will be automatically learned.</p>
 </td>
