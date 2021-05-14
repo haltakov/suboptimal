@@ -33,6 +33,14 @@ Researchers often invent complicated names for simple things. This page will hel
     <p>Tensors are data structures that are used to store data. For example, a 1D tensor could store prices of houses, a 2D tensor could store an image, a 3D tensor could store multiple images etc.</p>
 </td>
 </tr>
+<tr>
+<td valign="top">Principal Component Analysis (PCA)</td>
+<td>
+    <p>An algorithm that removes less important data from a dataset.</p>
+    <p>PCA (as any 'dimensionality reduction' algorithms) helps to reduce the storage space, to improve the performance of the models, and, to ease the data visualization.</p>
+    <p>Technically, it's a statistical procedure that identifies and sorts a small number of uncorrelated variables, called principal components, in such a way that the first one has the most scattered data. So if we want to reduce from <tt>n</tt> to <tt>k</tt> dimensions, we keep the <tt>k</tt>'s first principal components. But the lower is <tt>k</tt> the greater is the information loss.</p>
+</td>
+</tr>
 </tbody>
 </table>
 

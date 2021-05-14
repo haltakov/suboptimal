@@ -19,7 +19,7 @@ Here you will find explanations of some math terms often used in Machine Learnin
 </td>
 </tr>
 <tr>
-<td valign="top">Partial derivative of a function <tt>f(x,y)</tt>td>
+<td valign="top">Partial derivative of a function <tt>f(x,y)</tt></td>
 <td>
     <p>Tells you how much the function <tt>f</tt> is changing if you change only one of the argument.</p>
     <p>When using a partial derivative, you always need to specify with respect to which argument you compute it. Then it is the same as a regular derivative.</p>
