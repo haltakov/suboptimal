@@ -28,17 +28,9 @@ Researchers often invent complicated names for simple things. This page will hel
 <tr>
 <td valign="top">Principal Component Analysis (PCA)</td>
 <td>
-    <p>An algorithm that is used to narrow down datasets.</p>
-    <p>PCA (as any 'dimensionality reduction' algorithms) has several advantages:
-	<ul>
-		<li>it reduces the storage space required</li>
-		<li>it improves the performance of the machine learning model by removing the multicollinearity in the data</li>
-		<li>it eases the visualization of the data when reduced to very low dimensions such as 2D or 3D</li>
-	</ul>
-    </p>
-    <p>Technically, it's a statistical procedure that uses an orthogonal transformation to <strong>identify a small number of uncorrelated variables, called principal components</strong> from a large set of data possibly containing correlated variables.</p>
-    <p>This transformation is defined in such a way that the first principal component has the largest possible variance (variability in the data), and each succeeding component in turn has the highest variance possible under the constraint that it is orthogonal to the preceding components. So if we want to reduce from <tt>n</tt> to <tt>k</tt> dimensions, we keep the k's first principal components.</p>
-    <dl><dt>Source:</dt><dd>notes from the <a href="https://www.coursera.org/learn/machine-learning">Coursera's ML Course</a></dd></dl>
+    <p>An algorithm that removes less important data from a dataset.</p>
+    <p>PCA (as any 'dimensionality reduction' algorithms) helps to reduce the storage space, to improve the performance of the models, and, to ease the data visualization.</p>
+    <p>Technically, it's a statistical procedure that identifies and sorts a small number of uncorrelated variables, called principal components, in such a way that the first one has the most scattered data. So if we want to reduce from <tt>n</tt> to <tt>k</tt> dimensions, we keep the <tt>k</tt>'s first principal components. But the lower is <tt>k</tt> the greater is the information loss.</p>
 </td>
 </tr>
 </tbody>
