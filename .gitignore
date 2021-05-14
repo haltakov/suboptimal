@@ -1,2 +1,4 @@
 .vscode
 .venv
+website/output
+__pycache__
