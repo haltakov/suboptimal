@@ -41,6 +41,14 @@ Researchers often invent complicated names for simple things. This page will hel
     <p>Technically, it's a statistical procedure that identifies and sorts a small number of uncorrelated variables, called principal components, in such a way that the first one has the most scattered data. So if we want to reduce from <tt>n</tt> to <tt>k</tt> dimensions, we keep the <tt>k</tt>'s first principal components. But the lower is <tt>k</tt> the greater is the information loss.</p>
 </td>
 </tr>
+<tr>
+<td valign="top">Kernel</td>
+<td>
+    <p>A function that helps to separate datasets that can't be separated with a classic approach.</p>
+    <p>A kernel function inexplicitely find a higher dimensional space in which a non linearly separable dataset can be more easily separated, then project the separation back to the original dataset dimensions.</p>
+    <p>Technically, a kernel function allows making complex non-linear classifiers using any learning algorithm that can be expressed solely in terms of dot products between two vectors.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
