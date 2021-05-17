@@ -42,10 +42,10 @@ Researchers often invent complicated names for simple things. This page will hel
 </td>
 </tr>
 <tr>
-<td valign="top">Kernel</td>
+<td valign="top">Kernel (function)</td>
 <td>
-    <p>A function that helps to separate datasets that can't be separated with a classic approach.</p>
-    <p>A kernel function inexplicitely find a higher dimensional space in which a non linearly separable dataset can be more easily separated, then project the separation back to the original dataset dimensions.</p>
+    <p>A function that helps to separate datasets that can't be separated with a classic linear approach.</p>
+    <p>A kernel function implicitly finds a higher dimensional space in which a non linearly separable dataset can be easily separated, then project the separation back to the original dataset space.</p>
     <p>Technically, a kernel function allows making complex non-linear classifiers using any learning algorithm that can be expressed solely in terms of dot products between two vectors.</p>
 </td>
 </tr>
