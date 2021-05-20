@@ -49,6 +49,27 @@ Researchers often invent complicated names for simple things. This page will hel
     <p>Technically, a kernel function allows making complex non-linear classifiers using any learning algorithm that can be expressed solely in terms of dot products between two vectors.</p>
 </td>
 </tr>
+<tr>
+<td valign="top">Hyperparameters</td>
+<td>
+    <p>They indicate what the model looks like and how it will be trained. For example, in the case of neural networks:</p>
+    <ul>
+        <li>Learning rate</li>
+        <li>Batch size</li>
+        <li>Number of epochs</li>
+        <li>Hidden layers</li>
+        <li>Hidden units</li>
+        <li>Activations functions</li>
+    </ul>
+</td>
+</tr>
+<tr>
+<td valign="top">Parameters</td>
+<td>
+    <p>These are the internal variables of the model that will be updated during the training phase, for example, in the case of neural networks, the weights or biases of the network.</p>
+    <p>In some contexts, it is usual to describe a model by its number of parameters.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
