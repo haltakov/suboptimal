@@ -52,13 +52,13 @@ Researchers often invent complicated names for simple things. This page will hel
 <tr>
 <td valign="top">Hyperparameters</td>
 <td>
-    <p>They indicate what the model looks like and how it will be trained. For example, in the case of neural networks:</p>
+    <p>Hyperparameters specify the model's architecture and how it will be trained. Therefore, these hyperparameters are not learned during training phase. In the case of neural networks, some common hyperparameters are:</p>
     <ul>
         <li>Learning rate</li>
         <li>Batch size</li>
-        <li>Number of epochs</li>
-        <li>Hidden layers</li>
-        <li>Hidden units</li>
+        <li>Number of epochs to train the model</li>
+        <li>Number of hidden layers</li>
+        <li>Number of neurons in each layer</li>
         <li>Activations functions</li>
     </ul>
 </td>
@@ -66,7 +66,7 @@ Researchers often invent complicated names for simple things. This page will hel
 <tr>
 <td valign="top">Parameters</td>
 <td>
-    <p>These are the internal variables of the model that will be updated during the training phase, for example, in the case of neural networks, the weights or biases of the network.</p>
+    <p>The model parameters are there internal variables of the model that will be updated during the training phase, for example, in the case of neural networks, the weights or biases of the network.</p>
     <p>In some contexts, it is usual to describe a model by its number of parameters.</p>
 </td>
 </tr>
