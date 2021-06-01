@@ -50,6 +50,13 @@ Researchers often invent complicated names for simple things. This page will hel
 </td>
 </tr>
 <tr>
+<td valign="top">Parameters</td>
+<td>
+    <p>The model parameters are the internal variables of the model that will be updated during the training phase, for example, in the case of neural networks, the weights or biases of the network.</p>
+    <p>In some contexts, it is usual to describe a model by its number of parameters.</p>
+</td>
+</tr>
+<tr>
 <td valign="top">Hyperparameters</td>
 <td>
     <p>Hyperparameters specify the model's architecture and how it will be trained. Therefore, these hyperparameters are not learned during training phase. In the case of neural networks, some common hyperparameters are:</p>
@@ -61,13 +68,6 @@ Researchers often invent complicated names for simple things. This page will hel
         <li>Number of neurons in each layer</li>
         <li>Activations functions</li>
     </ul>
-</td>
-</tr>
-<tr>
-<td valign="top">Parameters</td>
-<td>
-    <p>The model parameters are there internal variables of the model that will be updated during the training phase, for example, in the case of neural networks, the weights or biases of the network.</p>
-    <p>In some contexts, it is usual to describe a model by its number of parameters.</p>
 </td>
 </tr>
 </tbody>
