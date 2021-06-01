@@ -1,15 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = 'Vladimir Haltakov'
-SITENAME = 'Suboptimal'
-SITEURL = ''
+AUTHOR = "Vladimir Haltakov"
+SITENAME = "SUBOPTIMaL - Seriously Unnecessary Baffling Obscure Perplexing Terms In Machine Learning"
+SITEURL = "https://suboptimal.wiki"
+PATH = "content"
+TIMEZONE = "Europe/Paris"
+DEFAULT_LANG = "en"
 
-PATH = 'content'
+# Set the theme to minimal
+THEME = "themes/minimal/"
 
-TIMEZONE = 'Europe/Paris'
+# Static pages of the website that will be generated
+TEMPLATE_PAGES = {
+    "pages/index.html": "index.html",
+    "pages/404.html": "404.html",
+    "pages/about.html": "about.html",
+}
 
-DEFAULT_LANG = 'en'
+# Settings for the URLs of the blog and the articles
+ARTICLE_URL = "explanation/{slug}/"
+ARTICLE_SAVE_AS = "explanation/{slug}/index.html"
+INDEX_SAVE_AS = "explanation.html"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -17,18 +29,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-# Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

@@ -61,12 +61,18 @@ serve-global:
 
 devserver:
 	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
-
+	
 devserver-global:
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -b 0.0.0.0
 
 publish:
+	postcss themes/minimal/static/css/styles.css -o themes/minimal/static/css/main.css --env production
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
+css:
+	postcss themes/minimal/static/css/styles.css -o themes/minimal/static/css/main.css   
+
+cssprod:
+	postcss themes/minimal/static/css/styles.css -o themes/minimal/static/css/main.css --env production
 
 .PHONY: html help clean regenerate serve serve-global devserver publish 
