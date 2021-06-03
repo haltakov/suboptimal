@@ -70,6 +70,24 @@ Researchers often invent complicated names for simple things. This page will hel
     </ul>
 </td>
 </tr>
+<tr>
+<td valign="top">Loss (Cost) Functions</td>
+<td>
+    <p>Functions that help to evaluate your model.</p>
+    <p>Loss Functions show the error between what value your model predicts and what the value actually is. Gradient descent is applied to these functions to find the least error. Some common ones are:</p>
+    <p>For Regression Models:</p>
+    <ul>
+        <li>Mean Absolute Error (MAE)</li>
+        <li>Mean Squared Error (MSE)</li>
+        <li>Mean Squared Logarithmic Error (MSLE)</li>
+    </ul>
+    <p>For Classification Models:</p>
+    <ul>
+        <li>Binary Cross Entropy Loss</li>
+        <li>Categorical Cross Entropy Loss</li>
+    </ul>
+</td>
+</tr>
 </tbody>
 </table>
 
