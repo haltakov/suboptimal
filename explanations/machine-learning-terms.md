@@ -71,10 +71,10 @@ Researchers often invent complicated names for simple things. This page will hel
 </td>
 </tr>
 <tr>
-<td valign="top">Loss (Cost) Functions</td>
+<td valign="top">Loss Functions</td>
 <td>
-    <p>Functions that help to evaluate your model.</p>
-    <p>Loss Functions show the error between what value your model predicts and what the value actually is. Gradient descent is applied to these functions to find the least error. Some common ones are:</p>
+    <p>Functions that are used to evaluate the performance of a model and guide the training process.</p>
+    <p>Loss Functions (aka Cost Functions) show the error between what value your model predicts and what the value actually is. Since these functions are generally differentiable (with some exceptions i.e. Hinge Loss), we can apply a Gradient Descent to find the least error. Some common ones are:</p>
     <p>For Regression Models:</p>
     <ul>
         <li>Mean Absolute Error (MAE)</li>
