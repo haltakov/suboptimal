@@ -88,6 +88,16 @@ Researchers often invent complicated names for simple things. This page will hel
     </ul>
 </td>
 </tr>
+<tr>
+<td valign="top">Lipschitzness</td>
+<td>
+    <p>Lipschitzness is a noun coming from the term Lipschitz continuity.</p>
+    <p>A Lipschitz continuous function is simply a function that has a limit on how fast it can change.</p>
+    <p>The Lipschitz constant of a function is a number that defines this limit. If the function is Lipschitz continuous it cannot change faster than this constant (the absolute value of the gradient is always smaller).</p>
+    <p>In the image below, the function can never cross the white cone - this is the limit of the change the function can make. Source: [Wikipedia](https://en.wikipedia.org/wiki/Lipschitz_continuity#/media/File:Lipschitz_Visualisierung.gif)</p>
+    <p><img width="400px" src="images/lipschitz.gif"></p>
+</td>
+</tr>
 </tbody>
 </table>
 
