@@ -20,9 +20,7 @@
                             >
                         </h4>
 
-                        <p class="mb-2 text-base leading-relaxed text-blueGray-500">
-                            {{ article.summary|striptags|truncate(280) }}
-                        </p>
+                        <p class="mb-2 text-base leading-relaxed h-24">{{ article.summary|striptags|truncate(280) }}</p>
                         <p></p>
                         <a
                             href="{{ SITEURL }}/{{ article.url }}"

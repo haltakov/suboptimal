@@ -1,6 +1,6 @@
-Title: Derivative
+Title: Derivative of a Function
 TitleShort: Derivative
-Date: 2010-12-03 10:20
+Date: 2021-05-08
 Author: Vladimir Haltakov
 AuthorLink: https://twitter.com/haltakov
 Category: Math Terms

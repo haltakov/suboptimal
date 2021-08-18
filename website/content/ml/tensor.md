@@ -1,11 +1,13 @@
 Title: Tensor
 TitleShort: Tensor
-Date: 2010-12-03 10:20
+Date: 2021-05-14
 Author: Vladimir Haltakov
 AuthorLink: https://twitter.com/haltakov
 Category: Machine Learning Terms
 Slug: tensor
 Summary: A multidimensional array similar to `numpy.array`.
+
+> Note: this explanation refers to the term tensor as typically used in popular machine learning libraries like TensorFlow and PyTorch. The mathematical definition is slightly different.
 
 A multidimensional array similar to `numpy.array`.
 

@@ -51,3 +51,7 @@ html {
 .markdown ol {
     @apply list-decimal ml-5;
 }
+
+.markdown blockquote {
+    @apply pl-5 border-l-2 bg-gray-100 border-gray-300;
+}

@@ -21,6 +21,7 @@ TEMPLATE_PAGES = {
 # Settings for the URLs of the blog and the articles
 ARTICLE_URL = "explanation/{slug}/"
 ARTICLE_SAVE_AS = "explanation/{slug}/index.html"
+ARTICLE_ORDER_BY = "titleshort"
 INDEX_SAVE_AS = "explanation.html"
 
 # Feed generation is usually not desired when developing
@@ -33,3 +34,7 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+# Enable the jinja2content plugin
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["jinja2content"]
