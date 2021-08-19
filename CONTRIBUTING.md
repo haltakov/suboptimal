@@ -6,7 +6,7 @@ Feel free to contribute an explanation to any of the categories by creating a pu
 
 ## Creating a new explanation
 
-Each explanation is stored in a separate Markdown file. The best way to create a new explanation is by copying the content of one of the existing ones and modifying it. You can find all existing explanations [here](/website/content).
+Each explanation is stored in a separate Markdown file. The best way to create a new explanation is by copying the content of one of the existing ones and modifying it. You can find all existing explanations [here](/website/content/explanations).
 
 You also need to provide some important metadata (in [Pelican](https://docs.getpelican.com/en/latest/content.html#file-metadata) format):
 
