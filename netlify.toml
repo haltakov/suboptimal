@@ -1,0 +1,17 @@
+[build]
+base = "website/"
+command = "make html"
+publish = "output/"
+
+[context.production]
+command = "make publish"
+
+[dev]
+autoLaunch = false
+command = "make devserver"
+framework = "#custom"
+jwtRolePath = "app_metadata.authorization.roles"
+jwtSecret = "MY_JWT_SECRET_VALUE"
+port = 8888
+publish = "output"
+targetPort = 8000

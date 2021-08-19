@@ -60,6 +60,7 @@ serve-global:
 	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b $(SERVER)
 
 devserver:
+	postcss themes/minimal/static/css/styles.css -o themes/minimal/static/css/main.css
 	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 	
 devserver-global:
