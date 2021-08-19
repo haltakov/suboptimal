@@ -4,3 +4,4 @@ website/output
 __pycache__
 node_modules
 .DS_Store
+website/themes/minimal/static/css/main.css
