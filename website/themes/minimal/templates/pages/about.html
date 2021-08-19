@@ -1,0 +1,86 @@
+{% extends "base.html" %} {% block content %}
+
+<section class="text-gray-700 flex-grow bg-gray-200 p-5">
+    <div class="container mx-auto mt-6 xl:w-2/3 bg-white border rounded-lg shadow-xl p-5">
+        <div class="flex flex-col w-full mb-2 text-left">
+            <h1 class="mb-2 text-xl font-black tracking-tightertext-black lg:text-4xl md:text-2xl">About SUBOPTIMaL</h1>
+        </div>
+        <div class="flex flex-col lg:flex-row lg:space-x-12">
+            <div class="w-full sm:px-4 mt-12 text-lg leading-snug tracking-tight text-gray-500 lg:px-0 lg:w-3/4">
+                <p class="pb-6">
+                    SUBOPTIMaL stands for "Seriously Unnecessary Baffling Obscure Perplexing Terms In Machine Learning".
+                    Many people use complicated terms in machine learning and math for things that are actually not
+                    difficult to explain. This website tries to reformulate these complicated terms and formulas in a
+                    simple, accessible and easy to understand format.
+                </p>
+                <p class="pb-6">
+                    I write most explanations, but many are contributed by people throught
+                    <a class="link" href="https://github.com/haltakov/suboptimal">GitHub</a>. If you want to make a
+                    correction or contribute an explanation check out the
+                    <a class="link" href="https://github.com/haltakov/suboptimal/blob/main/CONTRIBUTING.md"
+                        >Contribution Guidelines</a
+                    >. Make sure to also check the
+                    <a class="link" href="https://github.com/haltakov/suboptimal/issues">current open issues</a>
+                    for ideas what people want to see explained.
+                </p>
+            </div>
+            <div class="w-full max-w-screen-sm m-auto mt-12 lg:w-1/4">
+                <div
+                    class="
+                        p-4
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        bg-white
+                        border
+                        rounded-lg
+                        max-w-xs
+                        mx-auto
+                    "
+                >
+                    <div class="flex py-2">
+                        <img
+                            src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/vladimir.jpg"
+                            class="object-cover w-10 h-10 mr-2 rounded-full"
+                        />
+                        <div>
+                            <p class="text-sm font-semibold tracking-tight text-black">Vladimir Haltakov</p>
+                            <p class="text-sm font-normal tracking-tight text-coolGray-400">
+                                I make getting started with practical machine learning more accessible. Self-driving car
+                                engineer, father and traveller in the rest of the time.
+                            </p>
+                        </div>
+                    </div>
+                    <a
+                        class="
+                            w-full
+                            block
+                            text-center
+                            px-8
+                            py-2
+                            mt-4
+                            text-base text-white
+                            transition
+                            duration-500
+                            ease-in-out
+                            transform
+                            bg-blue-600
+                            border-blue-600
+                            rounded-md
+                            focus:shadow-outline focus:outline-none focus:ring-2
+                            ring-offset-current ring-offset-2
+                            hover:bg-blue-800
+                        "
+                        href="https://www.twitter.com/haltakov"
+                        target="_blank"
+                    >
+                        Follow on Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+<!-- prettier-ignore -->
+{% block title %}SUBOPTIMaL - {{ article.title }}{% endblock %}
+{% block url %}{{ SITEURL }}/{{ article.url }}{% endblock %}
+
+{% if article.summary %}
+{% block description %}{{ article.title }} - {{ article.summary | striptags | safe | truncate(300) }}{% endblock %}
+{% endif %}
+
+{% if article.image %}
+{% block image %}{{ SITEURL }}/images/{{ article.image }}{% endblock %}
+{% endif %}
+
+{% block content %}
+
+<section class="text-gray-700 flex-grow bg-gray-200">
+    <div class="container flex flex-col items-center px-2 sm:px-5 py-8 mx-auto">
+        <div class="flex flex-col w-full mb-12 text-left">
+            <div class="w-full mx-auto lg:w-2/3 xl:w-1/2 bg-white border rounded-lg shadow-xl p-3 sm:p-5">
+                <h2 class="mx-auto mb-4 text-xl font-semibold leading-none tracking-tighter text-black">
+                    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                </h2>
+                <h1 class="mx-auto mb-2 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">
+                    <a
+                        href="{{ SITEURL }}/{{ article.url }}"
+                        class="text-4xl font-bold"
+                        rel="bookmark"
+                        title="Permalink to {{ article.title|striptags }}"
+                        >{{ article.title }}</a
+                    >
+                </h1>
+                <h3 class="mb-10 text-sm">
+                    By <a class="link" href="{{ article.authorlink }}" target="_blank">{{ article.author }}</a>
+                </h3>
+                <div class="mx-auto text-base font-medium leading-relaxed text-gray-700 markdown">
+                    {{ article.content }}
+                </div>
+                <div class="text-sm mt-12">
+                    Back to <a class="link" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

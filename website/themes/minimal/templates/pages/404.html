@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+
+<div class="bg-gray-200 flex-grow p-3">
+    <div
+        class="
+            w-full
+            sm:w-1/2
+            lg:w-1/3
+            mx-auto
+            bg-white
+            text-gray-700
+            rounded-lg
+            shadow-lg
+            my-8
+            lg:my-24
+            text-center
+            p-8
+        "
+    >
+        <h2 class="font-bold text-2xl">Ooops... something went wrong!</h2>
+        <p class="mt-5 text-lg">
+            The page you are looking for doesn't exist. Go to the
+            <a class="link" href="{{ SITEURL }}/">start page</a>
+        </p>
+        <p class="mt-5 text-red-600">{{ icons.x("w-16 mx-auto") }}</p>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,147 @@
+{% extends "base.html" %} {% block content %}
+
+<section class="text-gray-700 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div class="container flex flex-col items-center px-5 py-16 mx-auto">
+        <div class="flex flex-col w-full mb-6 text-left lg:text-center">
+            <h2 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase">
+                Seriously Unnecessary Baffling Obscure Perplexing Terms In Machine Learning
+            </h2>
+            <h1
+                class="
+                    mx-auto
+                    mb-12
+                    text-2xl
+                    font-semibold
+                    leading-none
+                    tracking-tighter
+                    text-black
+                    lg:w-1/2
+                    sm:text-6xl
+                "
+            >
+                SUBOPTIMaL
+            </h1>
+            <p class="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-1/2">
+                Simple explanations for seemingly complicated machine learning and math terms
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="text-gray-700">
+    <div class="container flex flex-col items-center px-5 py-8 mx-auto">
+        <div class="flex flex-col w-full text-left">
+            <div class="w-full mx-auto lg:w-1/2">
+                <h2 class="mx-auto mb-6 text-xl font-semibold leading-none tracking-tighter text-black">
+                    Starting with Machine Learning is difficult...
+                </h2>
+
+                <p class="flex items-center mb-2 font-semibold text-gray-700">
+                    <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                    Everybody is using complicated and confusing terms
+                </p>
+                <p class="flex items-center mb-2 font-semibold text-gray-700">
+                    <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                    There are complicated math formulas everywhere
+                </p>
+                <p class="flex items-center mb-2 font-semibold text-gray-700">
+                    <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </span>
+                    You don't understand anything.
+                </p>
+
+                <p class="mx-auto mb-4 text-base font-medium leading-relaxed text-gray-700">
+                    Don't worry - you've come to the right place! This page will explain those perplexing terms in human
+                    language. And let me tell you a secret - most things are not that hard! Get started with these
+                    explanations.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-gray-700">
+    <div class="container items-center px-5 pb-8 lg:px-20 mx-auto">
+        <div class="flex flex-wrap justify-around">
+            <!-- prettier-ignore -->
+            {% for article in articles %} 
+                
+                {% if article.featured %} 
+                    {% include 'article_card.html' %}
+                {% endif %}
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="text-gray-700 bg-gray-100">
+    <div class="container flex flex-col items-center px-5 py-8 mx-auto">
+        <div class="flex flex-col w-full text-left">
+            <div class="w-full mx-auto lg:w-1/2">
+                <h2 class="mx-auto mb-6 text-xl font-semibold leading-none tracking-tighter text-black">
+                    Do you want to help?
+                </h2>
+
+                <p class="flex items-center mb-2 text-gray-700">
+                    This project is open-source and everybody can contribute an explanation by creating a pull request
+                    on &nbsp;<a class="link" href="https://github.com/haltakov/suboptimal">GitHub</a>.
+                </p>
+                <p>
+                    <a
+                        class="
+                            mx-auto
+                            block
+                            xl:w-1/3
+                            sm:w-1/2
+                            text-center
+                            px-8
+                            py-3
+                            mt-4
+                            text-base text-white
+                            transition
+                            duration-500
+                            ease-in-out
+                            transform
+                            bg-blue-600
+                            border-blue-600
+                            rounded-md
+                            focus:shadow-outline focus:outline-none focus:ring-2
+                            ring-offset-current ring-offset-2
+                            hover:bg-blue-800
+                        "
+                        href="https://github.com/haltakov/suboptimal/blob/main/CONTRIBUTING.md"
+                        target="_blank"
+                    >
+                        {{ icons.github("w-4 mr-2 inline fill-current") }} Contribute on GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

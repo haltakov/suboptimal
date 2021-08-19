@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+
+<section class="text-gray-700 bg-gray-200 flex-grow">
+    <div class="container px-5 pb-8 lg:px-20 mx-auto">
+        <div class="flex flex-wrap">
+            <!-- prettier-ignore -->
+            {% for article in articles %} 
+
+                {% include 'article_card.html' %}
+                
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

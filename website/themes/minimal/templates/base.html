@@ -1,0 +1,127 @@
+{% import 'icons.html' as icons %}
+
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        {% block head %}
+        <meta charset="utf-8" />
+
+        <!-- General medatada -->
+        <meta name="author" content="{{ AUTHOR }}" />
+        <meta name="title" content="{% block title %}{{ SITENAME }}{% endblock %}" />
+        <meta name="description" content="{% block description %}{{ SITEDESCRIPTION }}{% endblock %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Social media tags -->
+        <meta property="og:title" content="{{ self.title() }}" />
+        <meta property="og:description" content="{{ self.description() }}" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="{% block url %}{{ SITEURL }}{% endblock %}" />
+        <meta property="og:site_name" content="{{ SITENAME }}" />
+        <meta name="twitter:site" content="@haltakov" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:alt" content="{{ self.description() }}" />
+
+        <!-- Page title -->
+        <title>{{ self.title() }}</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo_16.png"
+            sizes="16x16"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo_32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo_96.png"
+            sizes="96x96"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+
+        <!-- Plausible Analytics -->
+        <script defer data-domain="suboptimal.wiki" src="https://plausible.io/js/plausible.js"></script>
+
+        <!-- Block for additional page specific header tags -->
+        <!-- prettier-ignore -->
+        {% block extra_head %}
+        {% endblock extra_head %}
+        
+        {% endblock head %}
+    </head>
+
+    <body class="font-body flex flex-col h-screen">
+        <!-- Navigation bar -->
+        <header class="border-b border-gray-300 bg-white">
+            <nav class="flex lg:container lg:mx-auto items-center font-bold text-gray-700 py-3 px-5">
+                <div class="flex flex-grow">
+                    <a class="" href="{{ SITEURL }}/">
+                        <span class="px-3 text-md sm:hidden"
+                            ><img
+                                class="inline h-8"
+                                src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo_96.png"
+                                alt="Suboptimal Logo" /></span
+                        ><span class="px-3 text-md hidden sm:inline">SUBOPTIMaL</span></a
+                    >
+                </div>
+
+                <ul class="flex text-sm uppercase justify-around">
+                    <li class="mx-3">
+                        <a class="black-link" href="{{ SITEURL }}/category/machine-learning-terms"
+                            ><span class="sm:hidden">ML</span><span class="hidden md:inline">Machine Learning</span></a
+                        >
+                    </li>
+                    <li class="mx-3">
+                        <a class="black-link" href="{{ SITEURL }}/category/math-terms">Math</a>
+                    </li>
+                    <li class="mx-3">
+                        <a class="black-link" href="{{ SITEURL }}/category/math-formulas">Formulas</a>
+                    </li>
+                    <li class="mx-3">
+                        <a class="black-link" href="{{ SITEURL }}/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page content block -->
+        {% block content %} {% endblock %}
+
+        <!-- Footer -->
+        {% if not hide_navbar %}
+        <footer class="border-t border-gray-300 text-gray-700 bg-white h-12 text-sm">
+            <div class="flex justify-center text-center my-3">
+                <span class="px-3 inline-block"
+                    >Created by
+                    <a class="link" href="https://haltakov.net" target="_blank" rel="noopener"
+                        >Vladimir Haltakov</a
+                    ></span
+                >
+                <a class="px-3 black-link" href="https://twitter.com/haltakov" aria-label="Twitter account"
+                    >{{ icons.twitter("w-4 mt-1 fill-current") }}</a
+                >
+                <a class="px-3 black-link" href="https://github.com/haltakov" aria-label="Github account">
+                    {{ icons.github("w-4 mt-1 fill-current") }}
+                </a>
+            </div>
+        </footer>
+        {% endif %}
+
+        <!-- Optional page specific scripts block -->
+        {% block scripts %} {% endblock %}
+    </body>
+</html>
