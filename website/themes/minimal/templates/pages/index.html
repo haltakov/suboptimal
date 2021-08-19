@@ -75,7 +75,8 @@
 
                 <p class="mx-auto mb-4 text-base font-medium leading-relaxed text-gray-700">
                     Don't worry - you've come to the right place! This page will explain those perplexing terms in human
-                    language. And let me tell you a secret - most things are not that hard!
+                    language. And let me tell you a secret - most things are not that hard! Get started with these
+                    explanations.
                 </p>
             </div>
         </div>
@@ -84,65 +85,60 @@
 
 <section class="text-gray-700">
     <div class="container items-center px-5 pb-8 lg:px-20 mx-auto">
-        <div class="flex flex-wrap">
-            <div class="w-full mx-auto my-4 bg-white border rounded-lg shadow-xl lg:w-1/4">
-                <div class="p-5">
-                    <h2 class="mb-4 text-xs font-semibold tracking-widest text-black uppercase">Machine Learning</h2>
-                    <h4 class="mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">
-                        ReLU
-                    </h4>
-                    <p class="mb-2 text-base leading-relaxed text-blueGray-500">
-                        A simple function of x returning 0 if x < 0 or x otherwise.
-                    </p>
-                    <p></p>
-                    <a
-                        href="#"
-                        class="text-sm font-semibold text-blue-600 uppercase hover:text-black"
-                        title="read more"
-                    >
-                        Read More &nbsp; »
-                    </a>
-                </div>
-            </div>
+        <div class="flex flex-wrap justify-around">
+            <!-- prettier-ignore -->
+            {% for article in articles %} 
+                
+                {% if article.featured %} 
+                    {% include 'article_card.html' %}
+                {% endif %}
 
-            <div class="w-full mx-auto my-4 bg-white border rounded-lg shadow-xl lg:w-1/4">
-                <div class="p-5">
-                    <h2 class="mb-4 text-xs font-semibold tracking-widest text-black uppercase">Machine Learning</h2>
-                    <h4 class="mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">
-                        Tensor
-                    </h4>
-                    <p class="mb-2 text-base leading-relaxed text-blueGray-500">
-                        A multidimensional array similar to numpy.array.
-                    </p>
-                    <p></p>
-                    <a
-                        href="#"
-                        class="text-sm font-semibold text-blue-600 uppercase hover:text-black"
-                        title="read more"
-                    >
-                        Read More &nbsp; »
-                    </a>
-                </div>
-            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
-            <div class="w-full mx-auto my-4 bg-white border rounded-lg shadow-xl lg:w-1/4">
-                <div class="p-5">
-                    <h2 class="mb-4 text-xs font-semibold tracking-widest text-black uppercase">Math</h2>
-                    <h4 class="mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">
-                        Derivative
-                    </h4>
-                    <p class="mb-2 text-base leading-relaxed text-blueGray-500">
-                        Indicates how much the function `f` is changing - is it increasing or decreasing.
-                    </p>
-                    <p></p>
+<section class="text-gray-700 bg-gray-100">
+    <div class="container flex flex-col items-center px-5 py-8 mx-auto">
+        <div class="flex flex-col w-full text-left">
+            <div class="w-full mx-auto lg:w-1/2">
+                <h2 class="mx-auto mb-6 text-xl font-semibold leading-none tracking-tighter text-black">
+                    Do you want to help?
+                </h2>
+
+                <p class="flex items-center mb-2 text-gray-700">
+                    This project is open-source and everybody can contribute an explanation by creating a pull request
+                    on &nbsp;<a class="link" href="https://github.com/haltakov/suboptimal">GitHub</a>.
+                </p>
+                <p>
                     <a
-                        href="#"
-                        class="text-sm font-semibold text-blue-600 uppercase hover:text-black"
-                        title="read more"
+                        class="
+                            mx-auto
+                            block
+                            xl:w-1/3
+                            sm:w-1/2
+                            text-center
+                            px-8
+                            py-3
+                            mt-4
+                            text-base text-white
+                            transition
+                            duration-500
+                            ease-in-out
+                            transform
+                            bg-blue-600
+                            border-blue-600
+                            rounded-md
+                            focus:shadow-outline focus:outline-none focus:ring-2
+                            ring-offset-current ring-offset-2
+                            hover:bg-blue-800
+                        "
+                        href="https://github.com/haltakov/suboptimal/blob/main/CONTRIBUTING.md"
+                        target="_blank"
                     >
-                        Read More &nbsp; »
+                        {{ icons.github("w-4 mr-2 inline fill-current") }} Contribute on GitHub
                     </a>
-                </div>
+                </p>
             </div>
         </div>
     </div>

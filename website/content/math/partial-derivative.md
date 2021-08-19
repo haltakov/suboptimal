@@ -5,6 +5,7 @@ Author: Vladimir Haltakov
 AuthorLink: https://twitter.com/haltakov
 Category: Math Terms
 Slug: partial-derivative
+Featured: 1
 Summary: Indicates how much the function `f(x,y)` is changing if you change only one of its arguments.
 
 Indicates how much the function `f(x,y)` is changing if you change only one of its arguments.

@@ -5,6 +5,7 @@ Author: Vladimir Haltakov
 AuthorLink: https://twitter.com/haltakov
 Category: Machine Learning Terms
 Slug: embedding
+Featured: 1
 Summary: A representation of an object as a list of numbers.
 
 A representation of an object as a list of numbers.

@@ -6,33 +6,11 @@
 <section class="text-gray-700 bg-gray-200 flex-grow">
     <div class="container px-5 pb-8 lg:px-20 mx-auto">
         <div class="flex flex-wrap">
-            {% for article in articles_page.object_list %}
+            <!-- prettier-ignore -->
+            {% for article in articles %} 
 
-            <div class="w-full my-4 xl:w-1/4 lg:w-1/3 md:w-1/2 px-2">
-                <div class="bg-white border rounded-lg shadow-xl">
-                    <div class="p-5">
-                        <h2 class="mb-4 text-xs font-semibold tracking-widest text-black uppercase">
-                            <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-                        </h2>
-                        <h4 class="mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">
-                            <a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title|striptags }}"
-                                >{{ article.titleshort }}</a
-                            >
-                        </h4>
-
-                        <p class="mb-2 text-base leading-relaxed h-24">{{ article.summary|striptags|truncate(280) }}</p>
-                        <p></p>
-                        <a
-                            href="{{ SITEURL }}/{{ article.url }}"
-                            class="text-sm font-semibold text-blue-600 uppercase hover:text-black"
-                            title="{{ article.title|striptags }}"
-                        >
-                            Read More &nbsp; »
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+                {% include 'article_card.html' %}
+                
             {% endfor %}
         </div>
     </div>
