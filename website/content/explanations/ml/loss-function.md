@@ -14,7 +14,7 @@ Loss Functions (aka Cost Functions) show the error between what value your model
 For Regression Models:
 
 -   Mean Absolute Error (MAE)
--   Mean Squared Error (MSE)
+-   [Mean Squared Error (MSE)](/explanation/mse)
 -   Mean Squared Logarithmic Error (MSLE)
 
 For Classification Models:
