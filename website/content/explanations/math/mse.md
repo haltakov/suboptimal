@@ -3,7 +3,7 @@ TitleShort: Mean Squared Error
 Date: 2021-05-08
 Author: Vladimir Haltakov
 AuthorLink: https://twitter.com/haltakov
-Category: Math Formulas
+Category: Math Terms
 Slug: mse
 Featured: 1
 Summary: A function that measures how well a predicted value `Ŷ` matches some ground-truth value `Y`
