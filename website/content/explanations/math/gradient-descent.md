@@ -5,6 +5,7 @@ Author: Vladimir Haltakov
 AuthorLink: https://twitter.com/haltakov
 Category: Math Terms
 Slug: gradient-descent
+Featured: 1
 Summary: A simple method for minimizing a function by changing its parameters in the direction the function decreases.
 
 A simple method for minimizing a function by changing its parameters in the direction the function decreases.
